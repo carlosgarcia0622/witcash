@@ -31,7 +31,7 @@
    background-color: #ffffff;
    
  }
- #mainNav{border-color:rgba(34,34,34,.05);background-color:#fff;-webkit-transition:all .35s;transition:all .35s;font-family:Catamaran,Helvetica,Arial,sans-serif;font-weight:200;letter-spacing:1px}
+ #mainNav{border-color:rgba(34,34,34,.05);background-color:rgba(0, 0, 0, .075);-webkit-transition:all .35s;transition:all .35s;font-family:Catamaran,Helvetica,Arial,sans-serif;font-weight:200;letter-spacing:1px}
  #mainNav .navbar-brand{color:#fdcc52;font-family:Catamaran,Helvetica,Arial,sans-serif;font-weight:200;letter-spacing:1px}
  #mainNav .navbar-brand:focus,#mainNav .navbar-brand:hover{color:#fcbd20}
  #mainNav .navbar-toggler{font-size:12px;padding:8px 10px;color:#222}
