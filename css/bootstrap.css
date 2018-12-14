@@ -160,7 +160,7 @@
     top: -.5em;
   }
   
-  a {
+  #process a {
     color: #007bff;
     text-decoration: none;
     background-color: transparent;
@@ -2457,7 +2457,7 @@
     }
   }
   
-  .btn {
+  #process.btn {
     display: inline-block;
     font-weight: 400;
     text-align: center;
