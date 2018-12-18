@@ -1,0 +1,78 @@
+<head>
+<link href="css/form.css" type="text/css" rel="stylesheet" media="all">	
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
+
+<!------ Include the above in your HEAD tag ---------->
+
+<!-- SendEmail function-->
+<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+	  emailjs.init("user_pNL35HUPe5KFph6NLeAQy");
+   })();
+   
+</script>
+
+
+</head>
+<body>
+<!--<header class="masthead">-->
+<section class=" get-in-touch "> 
+   <h1 class="title">witcash.io</h1>
+   <p align="center" >Temporalmente nos encontramos en certificaciones con Appstore. Puedes descargar nuestra aplicacion, por favor ingrese su correo electrónico y nos podremos en contacto</p>
+   <br> <br> <br> 
+   	<form class="contact-form row">
+      <div class="form-field col x-50">
+         <input id="name" class="input-text js-input"  type="text" required>
+         <label class="label" for="name">Name</label>
+      </div>
+      <div class="form-field col x-50">
+         <input id="email" class="input-text js-input" type="email" required="required">
+         <label class="label" for="email">E-mail</label>
+      </div>
+      <div class="form-field col x-100 align-center">
+         <input  class="submit-btn" type="button" onclick="sendEmail()"  value="Submit">
+      </div>
+   	</form>
+	</section>
+<!--</header>-->
+</body>
+<script> 
+
+	function validar_email( email ) 
+	{
+	    var regex = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+	    return regex.test(email) ? true : false;
+	}
+
+
+	var sendEmail = function(){
+    var name = document.getElementById("name").value;
+	var email = document.getElementById("email").value;
+	if( validar_email(email) )
+	{
+		
+		var template_params = {
+            "name": name,
+            "email": email
+            }
+
+        var service_id = "default_service";
+        var template_id = "template_N20yGV57";
+		emailjs.send(service_id,template_id,template_params);
+		document.getElementById("name").value ="";
+		document.getElementById("email").value ="";
+		alert("Suscripción exitosa!");
+	}
+	else
+	{
+	    alert("Por favor ingrese un email que cumpla con el formato");
+	}
+	
+	
+}
+</script>
+
