@@ -260,16 +260,19 @@
     overflow: visible;
   }
   
-  button,
-  select {
-    text-transform: none;
-  }
+
   
   button,
   html [type="button"],
   [type="reset"],
   [type="submit"] {
-    -webkit-appearance: button;
+    font-family: -webkit-body;
+    text-transform: none;
+    text-underline-position: under;
+    text-decoration-line: underline;
+    color: #f3b600;
+    background: transparent;
+    -webkit-appearance: listitem;
   }
   
   button::-moz-focus-inner,
@@ -5137,7 +5140,7 @@
   .progress-bar-striped {
     background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-size: 1rem 1rem;
-  }
+  } 
   
   .progress-bar-animated {
     -webkit-animation: progress-bar-stripes 1s linear infinite;

@@ -25,7 +25,20 @@
 	outline: none;
 }
 
+.es, .en { display: none; }
 
+.es:lang(es) {
+  display: block;
+  
+}
+
+
+
+.en:lang(en) {
+  display: block;
+  
+  
+}
 
 #process 
 h1,
@@ -382,7 +395,7 @@ ul.social-iconsv2 li:last-child {
 	margin-left: 5px;
 }
 
-h3.agile-title {
+h3.agile-title, h3 {
 	font-size: 4em;
 	text-transform: uppercase;
 	font-weight: 800;
@@ -479,7 +492,7 @@ h4.sec-title {
 	font-size: 1.5em;
 }
 
-h4.sec-title1 {
+h4.sec-title1, h4 {
 	margin: 0 1.2em;
 	text-transform: uppercase;
 	color: #000;
@@ -535,32 +548,10 @@ h4.sec-title1.flow-odd {
 	margin-left: 0;
 }
 
-span.process-circle {
-	display: block;
-	background: #ff5f09;
-	width: 25px;
-	height: 25px;
-	border-radius: 50%;
-	border: 5px solid #fbdcce;
-}
 
-.process-direction {
-	position: absolute;
-	border-top: 3px dotted #4bafe8;
-	transform: rotate(115deg);
-	left: -62%;
-	width: 91%;
-	top: 253px;
-}
 
-.process-direction2 {
-	position: absolute;
-	border-top: 3px dotted #4bafe8;
-	transform: rotate(64deg);
-	left: -61%;
-	width: 90%;
-	top: -234px;
-}
+
+
 
 ul.partners-icon li i {
 	font-size: 9em;
