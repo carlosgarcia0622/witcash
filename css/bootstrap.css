@@ -272,7 +272,8 @@
     text-decoration-line: underline;
     color: #f3b600;
     background: transparent;
-    -webkit-appearance: listitem;
+    -webkit-appearance: listitem; /*Chrome*/
+    -webkit-appearance: button-focus; /*Mozilla*/
   }
   
   button::-moz-focus-inner,

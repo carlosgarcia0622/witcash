@@ -25,20 +25,27 @@
 	outline: none;
 }
 
+/*Idiomas*/
+
+.flag-buttons{
+	box-align:center
+}
 .es, .en { display: none; }
 
 .es:lang(es) {
-  display: block;
+  display: -webkit-inline-box;
   
 }
 
 
 
 .en:lang(en) {
-  display: block;
+  display: -webkit-inline-box;
   
   
 }
+
+/*Fin idiomas*/
 
 #process 
 h1,
@@ -579,10 +586,7 @@ textarea {
 
 /* //contact */
 
-footer {
-	background: url(../images/footer.jpg) center no-repeat;
-	background-size: cover;
-}
+
 
 .fv3-contact span {
 	color: #eee;
